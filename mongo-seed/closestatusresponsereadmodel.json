@@ -1,0 +1,12 @@
+[
+  {
+    "ProposalId":"",
+    "PartnerId":"",
+    "StatusEntry": [
+      {
+        "Status":"Good",
+        "Note":"Noted",
+        "LenderCreatedOn":"Now?"
+      }]
+  }
+]

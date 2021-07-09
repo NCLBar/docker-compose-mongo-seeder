@@ -1,4 +1,7 @@
 FROM mongo
 
-COPY init.json /init.json
-CMD mongoimport --host mongodb --db TestDB --collection TestCollection --type json --file /init.json --jsonArray
+COPY dealershipreadmodel.json /dealershipreadmodel.json
+COPY closestatusresponsereadmodel.json /closestatusresponsereadmodel.json
+CMD mongoimport --host mongodb --db ukplatform-local-readstore --collection DealershipReadModel --type json --file /dealershipreadmodel.json --jsonArray \
+&& mongoimport --host mongodb --db ukplatform-local-readstore --collection CloseStatusResponseReadModel --type json --file /closestatusresponsereadmodel.json --jsonArray
+# second line is an example for later
